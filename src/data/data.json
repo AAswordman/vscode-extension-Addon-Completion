@@ -1,0 +1,441 @@
+{
+    "variable": [
+        {
+            "name": "$res.materials.ctrl",
+            "from": [
+                {
+                    "path": "materials",
+                    "jsonPath": "^/materials/[^/]*/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.animation_controllers.ctrl",
+            "from": [
+                {
+                    "path": "animation_controllers",
+                    "jsonPath": "^/animation_controllers/[^/]*/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.particles.comp",
+            "from": [
+                {
+                    "path": "particles",
+                    "jsonPath": "^/particle_effect/components/[^/]*$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$res.particles.root",
+            "from": [
+                {
+                    "path": "particles",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.attachables.root",
+            "from": [
+                {
+                    "path": "attachables",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.entity.root",
+            "from": [
+                {
+                    "path": "entity",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.render_controllers.root",
+            "from": [
+                {
+                    "path": "render_controllers",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$res.render_controllers.ctrl",
+            "from": [
+                {
+                    "path": "render_controllers",
+                    "jsonPath": "^/render_controllers/[^/]*/[^/]*$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$res.items.root",
+            "from": [
+                {
+                    "path": "items",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.trading.root",
+            "from": [
+                {
+                    "path": "trading",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.loot_tables.root",
+            "from": [
+                {
+                    "path": "loot_tables",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.spawn_rules.root",
+            "from": [
+                {
+                    "path": "spawn_rules",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.feature_rules.distribution",
+            "from": [
+                {
+                    "path": "feature_rules",
+                    "jsonPath": "^/minecraft:feature_rules/distribution/[^/]*$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.feature_rules.conditions",
+            "from": [
+                {
+                    "path": "feature_rules",
+                    "jsonPath": "^/minecraft:feature_rules/conditions/[^/]*$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.feature_rules.root",
+            "from": [
+                {
+                    "path": "feature_rules",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.recipes.root",
+            "from": [
+                {
+                    "path": "recipes",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.features.root",
+            "from": [
+                {
+                    "path": "features",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.biomes.root",
+            "from": [
+                {
+                    "path": "biomes",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.biomes.components",
+            "from": [
+                {
+                    "path": "biomes",
+                    "jsonPath": "^/minecraft:biome/components/[^/]*$",
+                    "use": "kv"
+                },
+                {
+                    "path": "biomes",
+                    "jsonPath": "^/minecraft:biome/component_groups/[^/]*/[^/]*/$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.blocks.root",
+            "from": [
+                {
+                    "path": "blocks",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.blocks.components",
+            "from": [
+                {
+                    "path": "blocks",
+                    "jsonPath": "^/minecraft:block/components/[^/]*$",
+                    "use": "kv"
+                },
+                {
+                    "path": "blocks",
+                    "jsonPath": "^/minecraft:block/component_groups/[^/]*/[^/]*/$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.items.root",
+            "from": [
+                {
+                    "path": "items",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.items.components",
+            "from": [
+                {
+                    "path": "items",
+                    "jsonPath": "^/minecraft:item/components/[^/]*$",
+                    "use": "kv"
+                },
+                {
+                    "path": "items",
+                    "jsonPath": "^/minecraft:item/component_groups/[^/]*/[^/]*/$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.manifest.root",
+            "from": [
+                {
+                    "path": "manifest.json",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        },
+        {
+            "name": "$beh.entities.comp",
+            "from": [
+                {
+                    "path": "entities",
+                    "jsonPath": "^/minecraft:entity/components/[^/]*$",
+                    "use": "kv"
+                },
+                {
+                    "path": "entities",
+                    "jsonPath": "^/minecraft:entity/component_groups/[^/]*/[^/]*$",
+                    "use": "kv"
+                }
+            ]
+        },
+        {
+            "name": "$beh.entities.root",
+            "from": [
+                {
+                    "path": "entities",
+                    "jsonPath": "^/[^/]*$",
+                    "use": "k"
+                }
+            ]
+        }
+    ],
+    "completion": [
+        {
+            "path": ".*/materials/.*",
+            "jsonPath": "/materials/[^/]*/",
+            "use": "$res.materials.ctrl"
+        },
+        {
+            "path": ".*/animation_controllers/.*",
+            "jsonPath": "/animation_controllers/[^/]*/",
+            "use": "$res.animation_controllers.ctrl"
+        },
+        {
+            "path": ".*/items/.*",
+            "jsonPath": "/",
+            "use": "$res.items.root"
+        },
+        {
+            "path": ".*/render_controllers/.*",
+            "jsonPath": "/",
+            "use": "$res.render_controllers.root"
+        },
+        {
+            "path": ".*/render_controllers/.*",
+            "jsonPath": "/render_controllers/[^/]*/",
+            "use": "$res.render_controllers.ctrl"
+        },
+        {
+            "path": ".*/entity/.*",
+            "jsonPath": "/",
+            "use": "$res.entity.root"
+        },
+        {
+            "path": ".*/attachables/.*",
+            "jsonPath": "/",
+            "use": "$res.attachables.root"
+        },
+        {
+            "path": ".*/particles/.*",
+            "jsonPath": "/particle_effect/components/",
+            "use": "$res.particles.comp"
+        },
+        {
+            "path": ".*/particles/.*",
+            "jsonPath": "/",
+            "use": "$res.particles.root"
+        },
+        {
+            "path": ".*/loot_tables/.*",
+            "jsonPath": "/",
+            "use": "$beh.loot_tables.root"
+        },
+        {
+            "path": ".*/trading/.*",
+            "jsonPath": "/",
+            "use": "$beh.trading.root"
+        },
+        {
+            "path": ".*/spawn_rules/.*",
+            "jsonPath": "/minecraft:spawn_rules/conditions/[^/]*/",
+            "use": "$beh.spawn_rules.condition"
+        },
+        {
+            "path": ".*/spawn_rules/.*",
+            "jsonPath": "/",
+            "use": "$beh.spawn_rules.root"
+        },
+        {
+            "path": ".*/recipes/.*",
+            "jsonPath": "/",
+            "use": "$beh.recipes.root"
+        },
+        {
+            "path": ".*/feature_rules/.*",
+            "jsonPath": "/",
+            "use": "$beh.feature_rules.root"
+        },
+        {
+            "path": ".*/feature_rules/.*",
+            "jsonPath": "/minecraft:feature_rules/conditions/",
+            "use": "$beh.feature_rules.conditions"
+        },
+        {
+            "path": ".*/feature_rules/.*",
+            "jsonPath": "/minecraft:feature_rules/distribution/",
+            "use": "$beh.feature_rules.distribution"
+        },
+        {
+            "path": ".*/features/.*",
+            "jsonPath": "/",
+            "use": "$beh.features.root"
+        },
+        {
+            "path": ".*/biomes/.*",
+            "jsonPath": "/",
+            "use": "$beh.biomes.root"
+        },
+        {
+            "path": ".*/biomes/.*",
+            "jsonPath": "/minecraft:biome/components",
+            "use": "$beh.biomes.components"
+        },
+        {
+            "path": ".*/biomes/.*",
+            "jsonPath": "/minecraft:biome/component_groups/[^/]*/",
+            "use": "$beh.biomes.components"
+        },
+        {
+            "path": ".*/blocks/.*",
+            "jsonPath": "/",
+            "use": "$beh.blocks.root"
+        },
+        {
+            "path": ".*/blocks/.*",
+            "jsonPath": "/minecraft:block/components",
+            "use": "$beh.blocks.components"
+        },
+        {
+            "path": ".*/blocks/.*",
+            "jsonPath": "/minecraft:block/component_groups/[^/]*/",
+            "use": "$beh.blocks.components"
+        },
+        {
+            "path": ".*/items/.*",
+            "jsonPath": "/",
+            "use": "$beh.items.root"
+        },
+        {
+            "path": ".*/items/.*",
+            "jsonPath": "/minecraft:item/components",
+            "use": "$beh.items.components"
+        },
+        {
+            "path": ".*/items/.*",
+            "jsonPath": "/minecraft:item/component_groups/[^/]*/",
+            "use": "$beh.items.components"
+        },
+        {
+            "path": ".*/manifest.json",
+            "jsonPath": "/",
+            "use": "$beh.manifest.root"
+        },
+        {
+            "path": ".*/entities/.*",
+            "jsonPath": "/minecraft:entity/components/",
+            "use": "$beh.entities.comp"
+        },
+        {
+            "path": ".*/entities/.*",
+            "jsonPath": "/minecraft:entity/component_groups/[^/]*/",
+            "use": "$beh.entities.comp"
+        },
+        {
+            "path": ".*/entities/.*",
+            "jsonPath": "/",
+            "use": "$beh.entities.root"
+        }
+    ]
+}
